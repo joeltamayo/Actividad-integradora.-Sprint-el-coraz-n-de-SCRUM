@@ -1,0 +1,73 @@
+.baner_principal {
+    margin: 5%;
+    margin-top: 2%;
+    margin-bottom: 0;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 90%;
+}
+
+.baner_principal .img{
+    width: 100%;
+}
+
+.baner_principal .div_titulo {
+    height: 28%;
+    width: 75%;
+    background-color: rgb(248	247	246);
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.baner_principal .titulo{
+    margin: 0;
+    padding: 1.2vw;
+    font-size: 3.5vw;
+    font-weight: lighter;
+}
+
+.div_seccion {
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-top: 20px;
+    padding: .1vw;
+    width: 85%;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 1rem 0 rgba(0,0,0,0.1);
+    border-radius: 1rem;
+}
+.div_seccion .titulo{
+    margin: 2vw;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: 3vw;
+}
+
+.div_seccion .div_imagenes {
+    margin: 3%;
+    margin-top: 0;
+    display: block;
+}
+
+.div_seccion img {
+    margin: 1%;
+    width: 100%;
+}
+
+/* Escritorio */
+@media only screen and (min-width: 770px) {
+    .div_seccion .link_producto {
+        display: flex;
+    }
+    .div_seccion .titulo{
+        font-size: 2vw;
+    }
+    .div_seccion img {
+        margin: 1%;
+        width: 31.3%;
+    }
+}

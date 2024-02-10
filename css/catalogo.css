@@ -1,0 +1,110 @@
+/*  Catalogo */
+
+.div_catalogos {
+    min-width: 320px;
+    max-width: 90%;
+    padding: 3vw;
+    margin: 5vh auto;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.input_tab {
+    display: none;
+}
+.etiqueta {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    font-size: 0;
+    text-align: center;
+    color: #bbb;
+    border: 1px solid transparent;
+}
+.etiqueta:hover {
+    color: #888;
+    cursor: pointer;
+}
+.icono{
+    font-size: 5vw;
+}
+.input_tab:checked + .etiqueta {
+    color: #555;
+    border: 1px solid #ddd;
+    border-top: 2px solid rgb(	199	187	175);
+    border-bottom: 1px solid #fff;
+}
+#tab_Amortiguadores:checked ~ #contenido_Amortiguadores,
+#tab_Frenos:checked ~ #contenido_Frenos,
+#tab_Baterias:checked ~ #contenido_Baterias,
+#tab_Iluminacion:checked ~ #contenido_Iluminacion,
+#tab_Accesorios:checked ~ #contenido_Accesorios {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(20px, auto);
+    text-align: center;
+}
+
+.div_productos {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;
+}
+.link_producto {
+    text-decoration: none;
+    color: black;
+}
+.div_producto {
+    padding: 2vw;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 1rem 0 rgba(0,0,0,0.3);
+    border-radius: 1rem;
+    font-size: 3vW;
+}
+.div_producto:hover {
+    cursor: pointer;
+    padding: .5vw;
+}
+.div_productos img{
+    width: 100%;
+    height: auto;
+}
+.div_producto .nombre {
+    margin-bottom: 3px;
+}
+
+.div_producto .precio {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+
+/* Escritorio */
+
+@media only screen and (min-width: 770px) {
+    .etiqueta {
+        font-size: 1.5vw;
+    }
+    .icono{
+        font-size: 1.5vw;
+    }
+    #tab_Amortiguadores:checked ~ #contenido_Amortiguadores,
+    #tab_Frenos:checked ~ #contenido_Frenos,
+    #tab_Baterias:checked ~ #contenido_Baterias,
+    #tab_Iluminacion:checked ~ #contenido_Iluminacion,
+    #tab_Accesorios:checked ~ #contenido_Accesorios {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .div_producto {
+        font-size: 1.4vw;
+    }
+}
+@media screen and (max-width: 520px) {
+    .etiqueta {
+        padding: 15px;
+    }
+}
+

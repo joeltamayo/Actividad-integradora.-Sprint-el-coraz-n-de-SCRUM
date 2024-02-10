@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carrito de compras</title>
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/catalogo.css">
+    </head>
+    <body>
+        <header>
+            <nav class="nav">
+                <input type="checkbox" id="nav_checkbox" class="nav_checkbox" title="menu hamburguesa">
+                <label for="nav_checkbox" class="nav_toggle">
+                    <svg class="menu" width="100" viewBox="0 0 50 50">
+                        <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 L 0 7.5 z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 L 0 22.5 z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 L 0 37.5 z"></path>
+                    </svg>
+                    <svg class="close" width="100" viewBox="0 0 84 84">
+                        <path d="M42,0C18.803,0,0,18.807,0,42c0,23.197,18.803,42,42,42c23.193,0,42-18.803,42-42
+                        C84,18.807,65.193,0,42,0z M50.643,42l15.303,15.302l-8.643,8.642L42.002,50.643L26.699,65.944l-8.641-8.642L33.359,42
+                        l-15.3-15.298l8.641-8.646L42,33.357l15.301-15.299l8.643,8.641L50.643,42z"/>
+                    </svg>
+                </label>
+                <ul class="nav_menu">
+                    <li class="menu_logo">
+                        <a href="../index.html">
+                            <img class="img" src="../media/img_logo.png" alt="imagen del logo Refaccionaria alcatraz">
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a class="link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="list_item">
+                        <a class="link" href="./catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="list_item">
+                        <a class="link" href="./carrito.html">Carrito</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="div_catalogos">
+            <input class="input_tab" id="tab_Amortiguadores" type="radio" name="tabs" checked>
+            <label class="etiqueta" for="tab_Amortiguadores">
+                <svg class="icono" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14 20C14 21.1046 13.1046 22 12 22C10.8954 22 10 21.1046 10 20C10 18.8954 10.8954 18 12 18C13.1046 18 14 18.8954 14 20Z" stroke="#1C274C" stroke-width="1.5"></path> <path d="M6 4C6 3.05719 6 2.58579 6.29289 2.29289C6.58579 2 7.05719 2 8 2H16C16.9428 2 17.4142 2 17.7071 2.29289C18 2.58579 18 3.05719 18 4C18 4.94281 18 5.41421 17.7071 5.70711C17.4142 6 16.9428 6 16 6H8C7.05719 6 6.58579 6 6.29289 5.70711C6 5.41421 6 4.94281 6 4Z" stroke="#1C274C" stroke-width="1.5"></path> <path d="M8.5 16.5C8.5 15.6716 9.17157 15 10 15H14C14.8284 15 15.5 15.6716 15.5 16.5C15.5 17.3284 14.8284 18 14 18H10C9.17157 18 8.5 17.3284 8.5 16.5Z" stroke="#1C274C" stroke-width="1.5"></path> <path d="M14 15.5V5.5" stroke="#1C274C" stroke-width="1.5"></path> <path d="M10 15.5V6" stroke="#1C274C" stroke-width="1.5"></path> <path d="M8 8L16 10M8 11.5L16 13.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 11.4995L22 11.4995M4 11.5005H2M19.0713 14.3L19.7784 15M4.92871 14.3L4.2216 15M19.0713 8.69996L19.7784 8M4.92871 8.69996L4.2216 8" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+                    Amortiguadores</label>
+            <input class="input_tab" id="tab_Frenos" type="radio" name="tabs">
+            <label class="etiqueta" for="tab_Frenos">
+                <svg class="icono" height="1em" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="si-glyph si-glyph-disc-stop" fill="#000000" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>779</title> <defs> </defs> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g> <g transform="translate(3.000000, 3.000000)"> <rect transform="translate(8.525950, 0.709450) rotate(-45.000000) translate(-8.525950, -0.709450) " x="7.52595959" y="0.209454795" width="2.14597942" height="1.22898821"> </rect> <rect transform="translate(1.249550, 9.343550) rotate(225.032412) translate(-1.249550, -9.343550) " x="0.749554715" y="8.34355943" width="1.22898841" height="2.14597976"> </rect> <ellipse cx="5.115" cy="5.141" rx="3.115" ry="3.141"> </ellipse> <path d="M4.988,3.022 C3.892,3.022 3.009,3.908 3.009,4.999 C3.009,6.091 3.893,6.975 4.988,6.975 C6.079,6.975 6.967,6.091 6.967,4.999 C6.967,3.908 6.079,3.022 4.988,3.022 L4.988,3.022 Z" fill="#434343" class="si-glyph-fill"> </path> </g> <path d="M15.301,10.953 C15.701,9.962 15.958,8.986 15.958,7.969 C15.958,3.556 12.385,0.063 7.979,0.063 C3.573,0.063 0,3.556 0,7.969 C0,12.381 3.572,15.958 7.979,15.958 C8.659,15.958 9.311,15.858 9.938,15.694 L10.969,15.437 L10.938,10.953 L15.301,10.953 L15.301,10.953 Z M12.261,2.891 L13.13,3.76 L11.612,5.278 L10.743,4.409 L12.261,2.891 L12.261,2.891 Z M3.633,13.193 L2.765,12.324 L4.283,10.806 L5.151,11.675 L3.633,13.193 L3.633,13.193 Z M5,8.00095511 C5,6.34383954 6.3434992,5 8,5 C9.65553772,5 11,6.34288443 11,8.00095511 C11,9.65616046 9.65553772,11 8,11 C6.34253612,11 5,9.65711557 5,8.00095511 L5,8.00095511 Z" fill="#434343" class="si-glyph-fill"> </path> <rect fill="#434343" x="12" y="12" width="4.02331543" height="4" class="si-glyph-fill"> </rect> </g> </g> </g></svg>
+                Frenos</label>
+            <input class="input_tab" id="tab_Baterias" type="radio" name="tabs">
+            <label class="etiqueta" for="tab_Baterias">
+                <svg class="icono" height="1em" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M22,8a2,2,0,0,0-2-2H18V4.8A1.37,1.37,0,0,0,18,4.27a.58.58,0,0,0-.22-.22,1.37,1.37,0,0,0-.53,0H14.8a1.37,1.37,0,0,0-.53,0,.58.58,0,0,0-.22.22A1.37,1.37,0,0,0,14,4.8V6H10V4.8A1.37,1.37,0,0,0,10,4.27a.58.58,0,0,0-.22-.22A1.37,1.37,0,0,0,9.2,4H6.8a1.37,1.37,0,0,0-.53,0,.58.58,0,0,0-.22.22A1.37,1.37,0,0,0,6,4.8V6H4A2,2,0,0,0,2,8V18a2,2,0,0,0,2,2H20a2,2,0,0,0,2-2ZM10.5,14H9v1.5H7V14H5.5V12H7V10.5H9V12h1.5ZM18,14H14V12h4Z" fill-rule="evenodd"></path><rect width="24" height="24" fill="none"></rect></g></svg>
+                    Baterias</label>
+            <input class="input_tab" id="tab_Iluminacion" type="radio" name="tabs">
+            <label class="etiqueta" for="tab_Iluminacion">
+                <svg class="icono" height="1em" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+                    <path d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z"/></svg>
+                    Iluminación</label>
+            <input class="input_tab" id="tab_Accesorios" type="radio" name="tabs">
+            <label class="etiqueta" for="tab_Accesorios">
+                <svg class="icono" height="1em" fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M256,0C114.84,0,0,114.84,0,256s114.84,256,256,256c141.158,0,256-114.84,256-256S397.158,0,256,0z M305.951,412.098 h-99.902v-37.463h99.902V412.098z M288.818,237.926c2.957,5.36,4.646,11.519,4.646,18.074c0,20.69-16.774,37.463-37.463,37.463 S218.537,276.69,218.537,256S235.31,218.537,256,218.537c0.252,0,0.501,0.014,0.752,0.019l48.157-79.642l32.059,19.384 L288.818,237.926z M423.655,352.794l-9.37,16.195l-59.499-34.326l18.722-32.45l26.098,15.057 c8.209-19.26,12.492-40.127,12.492-61.27c0-21.734-4.471-42.441-12.53-61.259l-26.053,15.042l-18.732-32.443l26.005-15.014 c-24.962-33.168-62.819-56.1-106.055-61.294v30.091h-37.463V101.03c-43.237,5.194-81.093,28.126-106.055,61.294l26.005,15.014 l-18.732,32.443l-26.053-15.042c-8.06,18.819-12.53,39.526-12.53,61.26c0,21.143,4.282,42.01,12.492,61.27l26.097-15.057 l18.722,32.45l-59.499,34.328l-9.368-16.197C71.398,323.497,62.439,290.026,62.439,256C62.439,149.27,149.27,62.439,256,62.439 c106.731,0,193.561,86.831,193.561,193.561C449.561,290.026,440.602,323.497,423.655,352.794z"></path> </g> </g> </g></svg>
+                    Accesorios</label>
+
+            <div class="div_productos" id="contenido_Amortiguadores">
+                <a class="link_producto" href="../html/producto.html">
+                    <div class="div_producto">
+                        <img src="../media/catalogo/img_catalogo_amortiguador_2.png" class="img_producto">
+                        <h3 class="nombre">Amortiguador expres</h3>
+                        <h3 class="precio">$6,000</h3>
+                    </div>
+                </a>
+                <a class="link_producto" href="../html/producto.html">
+                    <div class="div_producto">
+                        <img src="../media/catalogo/img_catalogo_amortiguador_3.png"  class="img_producto">
+                        <h3 class="nombre">Amortiguador letox</h3>
+                        <h3 class="precio">$4,000</h3>
+                    </div>
+                </a>
+                <a class="link_producto" href="../html/producto.html">
+                    <div class="div_producto">
+                        <img src="../media/catalogo/img_catalogo_amortiguador_4.png"  class="img_producto">
+                        <h3 class="nombre">Amortiguador vanguard</h3>
+                        <h3 class="precio">$8,000</h3>
+                    </div>
+                </a>
+            </div>
+                
+            <div class="div_productos" id="contenido_Frenos">
+                <a class="link_producto" href="../html/producto.html">
+                    <div class="div_producto">
+                        <img src="../media/catalogo/Freno.jpeg"  class="img_producto">
+                        <h3 class="nombre">Frenos style</h3>
+                        <h3 class="precio">$3,000</h3>
+                    </div>
+                </a>
+            </div>
+                
+            <div class="div_productos" id="contenido_Baterias">
+                <a class="link_producto" href="../html/producto.html">
+                    <div class="div_producto">
+                        <img src="../media/catalogo/Bateria.jpeg"  class="img_producto">
+                        <h3 class="nombre">Bateria heliar</h3>
+                        <h3 class="precio">$1200</h3>
+                    </div>
+                </a>
+            </div>
+                
+            <div class="div_productos" id="contenido_Iluminacion">
+                <a class="link_producto" href="../html/producto.html">
+                    <div class="div_producto">
+                        <img src="../media/catalogo/Iluminacionjpeg.jpeg"  class="img_producto">
+                        <h3 class="nombre">Faro para carro ilium</h3>
+                        <h3 class="precio">$3,000</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="div_productos" id="contenido_Accesorios">
+                <a class="link_producto" href="../html/producto.html">
+                    <div class="div_producto">
+                        <img src="../media/catalogo/Accesorios.png" class="img_producto">
+                        <h3 class="nombre">Asiento de cuero</h3>
+                        <h3 class="precio">$7000</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <footer id="footer">
+            <ul class="footer_lista">
+                <li class="footer_lista_item">
+                    <div class="footer_div_contenido">
+                        <h3 class="footer_titulo">Autor</h3>
+                        <p class="footer_parrafo">Joel Tamayo de Anda</p>
+                    </div>
+                </li>
+                <li class="footer_lista_item">
+                    <div class="footer_div_contenido">
+                        <h3 class="footer_titulo">Contacto</h3>
+                        <a class="footer_link" href="mailto:joel.tamayo23B@udgvirtual.udg.mx">Contáctame vía email</a>
+                    </div>
+                </li>
+                <li class="footer_lista_item">
+                    <div class="footer_div_contenido">
+                        <h3 class="footer_titulo">Referencias</h3>
+                        <p class="footer_parrafo">Imágenes: Inicio - Canva. (n.d.). Canva. https://www.canva.com/</p>
+                        <p class="footer_parrafo">Iconos: Font awesome. (n.d.). Font Awesome. https://fontawesome.com/icons </p>
+                    </div>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
